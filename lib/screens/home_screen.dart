@@ -14,7 +14,15 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("Amer Internship test"),
       ),
-        body: SizedBox(),
+        body: SizedBox(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              ElevatedButton(onPressed: (){}, child: const Text("Teleport me to somewhere random")),
+              ElevatedButton(onPressed: (){}, child: const Text("Bring me back home")),
+            ],
+          ),
+        ),
 
     );
   }
